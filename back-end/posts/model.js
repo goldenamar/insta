@@ -1,12 +1,12 @@
 const { model, Schema } = require("mongoose");
 
 const PostScheme = new Schema({
-    name : String,
+    publisher: String,
     topic: String,
+    info: String,
     image: String,
-    publisher: String
 });
 
 const PostModel = model("Post", PostScheme);
 
-module.exports = PostModel
+module.exports = PostModel  

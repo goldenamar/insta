@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const uri =
-    "mongodb+srv://blackberry_cream:Fusion2me@instagram.i0wwxe2.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://blackberry_cream:Fusion2me@instagram.altjwm7.mongodb.net/?retryWrites=true&w=majority";
 
 const connect = async () => {
     try {
