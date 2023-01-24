@@ -9,9 +9,9 @@ const middleware = (req, res, next) => {
 router
     .use(middleware)
     .get('/posts', getPosts)
-    .get('/posts/:id', getPost)
+    .get('/posts:id', getPost)
     .post('/posts', createPost)
-    .patch('/posts/:id', updatePost)
-    .delete('/posts/:id', deletePost)
+    .patch('/posts:id', updatePost)
+    .delete('/posts:id', deletePost)
 
 module.exports = router;

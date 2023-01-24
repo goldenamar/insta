@@ -18,7 +18,13 @@ exports.getPosts = async ( req ,res, next) => {
 }
 
 exports.getPost = async ( req, res, next) => {
-
+    const {id} = req.query.starts;
+    try {
+        const post = await Post.findById(id);
+        res.status(200).json(post)
+    } catch (err){
+        res.status(400).json(err)
+    }
 }
 
 exports.updatePost = async ( req, res, next) => {
