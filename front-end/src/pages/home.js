@@ -5,6 +5,9 @@ import { useEffect } from "react";
 
 function Home() {
   const navigate = useNavigate();
+
+  localStorage.setItem('id',"hi");
+
   useEffect(()=> {
     if(localStorage.getItem('id') === "hi"){
       navigate("/signin")
@@ -19,6 +22,7 @@ function Home() {
           <Link to="/posts">Posts</Link>
           <Link to="/users">Users</Link>
           <Link to="/signin">Sign in</Link>
+          <div className="account"></div>
         </div>
       </div>
       <div className="mid">

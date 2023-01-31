@@ -5,6 +5,7 @@ exports.createPost = async (req, res, next) => {
         res
             .status(400)
             .json({message: `Publisher or Topic required`});
+            console.log("Error")
     }
     const createPost = await Post.create({ ...req.body });
     res
@@ -17,13 +18,14 @@ exports.getPosts = async ( req ,res, next) => {
     res.status(200).json(posts)
 }
 
-exports.getPost = async ( req, res, next) => {
-    const {id} = req.query.starts;
+exports.getPost = async (req, res) => {
+    const { id } = req.params;
     try {
         const post = await Post.findById(id);
-        res.status(200).json(post)
-    } catch (err){
-        res.status(400).json(err)
+        res.status(200).json(post);
+    } catch (err) {
+        res.status(400).json(err);
+        console.log("Error")
     }
 }
 
