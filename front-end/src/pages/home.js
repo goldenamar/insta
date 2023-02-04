@@ -1,7 +1,7 @@
 import "./home.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
 
 function Home() {
   // const navigate = useNavigate();
@@ -10,14 +10,14 @@ function Home() {
   // if(signedin === "yes"){
   //   console.log("Signed in")
   // } else {
-  localStorage.setItem('id',"hi");
+  // localStorage.setItem('id',"hi");
   // }
 
-  useEffect(()=> {
-    if(localStorage.getItem('id') === "hi"){
-      navigate("/signin")
-    }
-  })
+  // useEffect(()=> {
+  //   if(localStorage.getItem('id') === "hi"){
+  //     navigate("/signin")
+  //   }
+  // })
 
   return (
     <div className="main">

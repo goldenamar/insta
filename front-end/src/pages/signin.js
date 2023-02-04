@@ -7,11 +7,11 @@ function SignIn() {
     // const navigate = useNavigate;
     // let signedin = "no"
 
-    function signin(){
-        localStorage.setItem('id',"hello")
-        signedin = "yes";
-        return signedin
-    }
+    // function signin(){
+    //     localStorage.setItem('id',"hello")
+    //     signedin = "yes";
+    //     return signedin
+    // }
 
     // useEffect(() => {
     //     if(localStorage.getItem('id') === "hello"){                                                                                                                  "){
